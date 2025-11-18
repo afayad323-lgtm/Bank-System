@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Bank System</title>
+</head>
+<body>
+            <h1>Bank System</h1>
+
+    <div class="container">
+        <!-- create account -->
+
+        <div class="card">
+            <h2>Create Account</h2>
+            <input type="text" placeholder="type your name" id="acc-name">
+            <input type="number" placeholder="initial balance" id="init-balance">
+            <button id="crt-btn">Create</button>
+        </div>
+
+        <!-- deposit -->
+        <div class="card">
+            <h2>Deposit</h2>
+            <input type="number" placeholder="type youe account number" id="dep-acc">
+            <input type="number" placeholder="Deposited amount" id="dep-amount">
+            <button id="dep-btn">Deposit</button>
+        </div>
+
+        <!-- withdraw -->
+         <div class="card">
+            <h2>withdraw</h2>
+            <input type="number" placeholder="type your account number" id="withd-acc">
+            <input type="number" placeholder="withdrawn amount" id="withd-amount">
+            <button id="withd-btn">withdraw</button>
+
+         </div>
+
+         <div id="transfer" class="card">
+            <h2>Transfer Money</h2>
+            <input type="text" id="from-acc" placeholder="From Account Number">
+            <input type="text" id="to-acc" placeholder="To Account Number">
+            <input type="number" id="transfer-amount" placeholder="Amount">
+            <button id="transfer-btn">Transfer</button>
+        </div>
+
+         <!-- All accounts -->
+        <div class="full">
+            <h2>Show All Accounts</h2>
+            <div id="accounts"></div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
